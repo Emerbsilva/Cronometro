@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/azul"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Chronometer
+        android:id="@+id/cronometro1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/azul_claro"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="80sp" />
+
+    <EditText
+        android:id="@+id/atividade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/azul_claro"
+        android:inputType="datetime"
+        android:hint="ATIVIDADE"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:layout_below="@id/cronometro1"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"/>
+
+    <EditText
+        android:id="@+id/descanso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/azul_claro"
+        android:inputType="datetime"
+        android:hint="DESCANSO"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:layout_below="@id/atividade"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"/>
+
+    <Button
+        android:id="@+id/btIniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descanso"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:text="Iniciar"
+        android:textAllCaps="false"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btPausar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descanso"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Pausar"
+        android:textAllCaps="false"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btZerar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descanso"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:text="Zerar"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
